@@ -1,7 +1,7 @@
 # nodejs-publish
 ###### 通过容器内的Maven构建源码并提交到指定的服务器中
 ###### 环境说明
-- NODE_VERSION=13.8.0
+- NODE_VERSION=0.8.28
 - YARN_VERSION 1.21.1
 ###### 关于GIT-URL的说明
 http://www.kernel.org/pub/software/scm/git/docs/git-clone.html#URLS

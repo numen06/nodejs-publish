@@ -109,7 +109,7 @@ class SyncCode():
             self.log.info("开始NODEJS编译")
             # mavn编译文件
             env_dist = os.environ
-            self.log.info(os.system('npm install && npm run build && tar -zcvf dist.gz ./dist/'))
+            self.log.info(os.system('npm install && npm run build'))
         except Exception as e:
             raise e
         self.log.info("结束NODEJS编译")
@@ -145,6 +145,9 @@ class SyncCode():
                 self.log.info("开始执行远程命令:%s" % cmd)
                 self.log.info(ssh.exec_command(cmd))
                 self.log.info("完成远程命令")
+            self.log.info("开始删除编译文件:%s" % local_file_path)
+            os.remove(local_file_path)
+            self.log.info("完成删除编译文件")
         except Exception:
             raise
 
