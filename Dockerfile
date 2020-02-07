@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/numen/base-nodejs:8
+FROM registry.cn-hangzhou.aliyuncs.com/numen/base-nodejs
 
 RUN mkdir /app
 RUN mkdir /app/logs
