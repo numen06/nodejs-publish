@@ -12,7 +12,6 @@ RUN pip3 install --no-cache-dir -r requirements.txt -i http://mirrors.aliyun.com
 
 RUN chmod -R 777 /app
 
-COPY settings.xml /app
 COPY Log.py /app
 COPY start.py /app
 
