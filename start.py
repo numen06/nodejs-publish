@@ -109,7 +109,7 @@ class SyncCode():
             self.log.info("开始NODEJS编译")
             # mavn编译文件
             env_dist = os.environ
-            self.log.info(os.system('npm install && npm run build && tar -zcvf dist.zip ./dist/'))
+            self.log.info(os.system('npm install && npm run build && tar -zcvf dist.gz ./dist/'))
         except Exception as e:
             raise e
         self.log.info("结束NODEJS编译")
