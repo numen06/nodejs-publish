@@ -52,6 +52,7 @@ class SyncCode():
                 if (self.isError):
                     self.log.info("上一次执行错误,休息10秒后继续执行")
                     time.sleep(10)
+                    self.build()
                     for configName in self.errorConfigs:
                         try:
                             self.log.info("开始执行错误的配置%s" % configName)
