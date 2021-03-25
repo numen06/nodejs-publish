@@ -4,4 +4,4 @@ GitPython==3.0.5
 smmap2==2.0.5
 httpserver==1.1.0
 paramiko==2.7.1
-pyyaml==5.3
+pyyaml==5.4
